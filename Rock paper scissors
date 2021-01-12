@@ -1,0 +1,219 @@
+# Rock paper scissors game
+import sys
+import random
+import re
+possible_moves = ["rock","paper","scissors"]
+computermove_1 = random.choice(possible_moves)
+computermove_2 = random.choice(possible_moves)
+computermove_3 = random.choice(possible_moves)
+computermove_4 = random.choice(possible_moves)
+computermove_5 = random.choice(possible_moves)
+computermove_6 = random.choice(possible_moves)
+userscore = 0
+computerscore = 0
+# Start user moves
+usermove_1 = input("What is your first move?")
+if not usermove_1 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_1)
+if usermove_1 == computermove_1:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_1 == "rock" and computermove_1 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_1 == "rock" and computermove_1 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_1 == "paper" and computermove_1 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_1 == "paper" and computermove_1 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_1 == "scissors" and computermove_1 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_1 == "scissors" and computermove_1 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+
+# Second move
+usermove_2 = input("What is your next move?")
+if not usermove_2 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_2)
+if usermove_2 == computermove_2:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_2 == "rock" and computermove_2 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_2 == "rock" and computermove_2 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_2 == "paper" and computermove_2 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_2 == "paper" and computermove_2 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_2 == "scissors" and computermove_2 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_2 == "scissors" and computermove_2 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+    
+    # Third move
+usermove_3 = input("What is your next move?")
+if not usermove_3 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_3)
+if usermove_3 == computermove_3:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_3 == "rock" and computermove_3 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_3 == "rock" and computermove_3 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_3 == "paper" and computermove_3 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_3 == "paper" and computermove_3 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_3 == "scissors" and computermove_3 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_3 == "scissors" and computermove_3 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+
+        # Fourth move
+usermove_4 = input("What is your next move?")
+if not usermove_4 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_4)
+if usermove_4 == computermove_4:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_4 == "rock" and computermove_4 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_4 == "rock" and computermove_4 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_4 == "paper" and computermove_4 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_4 == "paper" and computermove_4 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_4 == "scissors" and computermove_4 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_4 == "scissors" and computermove_4 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+    
+            # Fifth move
+usermove_5 = input("What is your next move?")
+if not usermove_5 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_5)
+if usermove_5 == computermove_5:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_5 == "rock" and computermove_5 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_5 == "rock" and computermove_5 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_5 == "paper" and computermove_5 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_5 == "paper" and computermove_5 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_5 == "scissors" and computermove_5 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_5 == "scissors" and computermove_5 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+    
+                # Sixth move
+usermove_6 = input("What is your next move?")
+if not usermove_6 in possible_moves:
+    print("you cheated!")
+    sys.exit
+print("My move is", computermove_6)
+if usermove_6 == computermove_6:
+    print("It's a tie! My score is", computerscore, "Your score is", userscore)
+
+if usermove_6 == "rock" and computermove_6 == "paper":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_6 == "rock" and computermove_6 == "scissors":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_6 == "paper" and computermove_6 == "scissors":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_6 == "paper" and computermove_6 == "rock":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+if usermove_6 == "scissors" and computermove_6 == "rock":
+        computerscore = computerscore + 1
+        print("My point! My score is", computerscore, "Your score is", userscore)
+if usermove_6 == "scissors" and computermove_6 == "paper":
+    userscore = userscore + 1
+    print("Your point! My score is", computerscore, "Your score is", userscore)
+    
+if computerscore > userscore:
+    print("The final score is ",computerscore," to me and" , userscore, " to you. I win - better luck next time!")
+if computerscore < userscore:
+    print("The final score is ",computerscore," to me and" , userscore, " to you! You win - Good job!")
+if computerscore == userscore:
+    print("The final score is ",computerscore," to me and" , userscore, " to you! It's a tie! Final tiebreaker!")
+    usermove_f = input("What is your final move? Think carefully...")
+    computermove_f = random.choice(possible_moves)
+    if not usermove_f in possible_moves:
+        print("you cheated!")
+        sys.exit
+    print("My move is", computermove_f)
+    if usermove_f == computermove_f:
+        print("It's a tie There is no winner!")
+
+    if usermove_f == "rock" and computermove_f == "paper":
+            computerscore = computerscore + 1
+            print("My point! My score is", computerscore, "Your score is", userscore)
+    if usermove_f == "rock" and computermove_f == "scissors":
+        userscore = userscore + 1
+        print("Your point! My score is", computerscore, "Your score is", userscore)
+    if usermove_f == "paper" and computermove_f == "scissors":
+            computerscore = computerscore + 1
+            print("My point! My score is", computerscore, "Your score is", userscore)
+    if usermove_f == "paper" and computermove_f == "rock":
+        userscore = userscore + 1
+        print("Your point! My score is", computerscore, "Your score is", userscore)
+    if usermove_f == "scissors" and computermove_f == "rock":
+            computerscore = computerscore + 1
+            print("My point! My score is", computerscore, "Your score is", userscore)
+    if usermove_f == "scissors" and computermove_f == "paper":
+        userscore = userscore + 1
+        print("Your point! My score is", computerscore, "Your score is", userscore)
+    if computerscore > userscore:
+        print("The final score is ",computerscore," to me and" , userscore, " to you. I win - better luck next time!")
+    if computerscore < userscore:
+        print("The final score is ",computerscore," to me and" , userscore, " to you! You win - Good job!")
+    
